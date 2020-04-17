@@ -31,10 +31,10 @@ parts:
     
     build-packages:
       - python3
-      - pip
+      - python3-pip
       - python3-tqdm
       
     stage-packages:
       - python3
-      - pip
+      - python3-pip
       - python3-tqdm
