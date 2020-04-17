@@ -1,0 +1,34 @@
+name: solus-iso-downloader
+version: 'latest'
+summary: A python-based ISO downloader for Solus Linux
+description: |
+    A python-based ISO downloader for Solus Linux. Download your favorite distribution of Linux without opening a browser. Perfect for VM hosts.
+
+grade: stable
+confinement: strict
+
+apps:
+  solus-iso-downloader:
+    command: solus-iso-downloader
+    environment:
+      LC_ALL: C.UTF-8
+    plugs:
+      - home
+      - network
+      
+parts:
+  solus-iso-downloader:
+    source: https://github.com/kz6fittycent/Solus_ISO_Downloader
+    source-type: git
+    plugin: python
+    python-version: python3
+    
+    build-packages:
+      - python3
+      - pip
+      - tqdm
+      
+    stage-packages:
+      - python3
+      - pip
+      - tqdm
