@@ -15,7 +15,7 @@ architectures:
 
 apps:
   solus-iso-downloader:
-    command: solus-iso-downloader
+    command: solus_iso_downloader.py
     environment:
       LC_ALL: C.UTF-8
     plugs:
