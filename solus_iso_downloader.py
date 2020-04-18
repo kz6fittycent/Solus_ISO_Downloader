@@ -292,7 +292,7 @@ def main():
                         print()
                         PAUSE
                         print()
-                        print("Downloading Solus Budgie Edition...")
+                        print("Downloading Solus Plasma Edition...")
                         def download():
                             urlretrieve(ROC_PLA, PLA)
                         with tqdm(total=100, file=sys.stdout) as pbar:
