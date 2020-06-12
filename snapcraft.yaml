@@ -38,4 +38,4 @@ parts:
     plugin: dump
     source: .
     organize:
-      ./solus_iso_downloader: /bin/solus_iso_downloader
+      ./solus_iso_downloader.sh: /bin/solus_iso_downloader.sh
