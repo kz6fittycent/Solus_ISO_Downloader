@@ -26,6 +26,7 @@ parts:
   solus-iso-downloader:
     source: https://github.com/kz6fittycent/Solus_ISO_Downloader
     source-type: git
+    plugin: nil
     
     build-packages:
       - wget
