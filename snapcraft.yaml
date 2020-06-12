@@ -15,7 +15,7 @@ architectures:
 
 apps:
   solus-iso-downloader:
-    command: $SNAP/bin/solus_iso_downloader
+    command: $SNAP/bin/solus_iso_downloader.sh
     environment:
       LC_ALL: C.UTF-8
     plugs:
