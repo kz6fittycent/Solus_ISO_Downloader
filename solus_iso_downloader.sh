@@ -3,7 +3,7 @@
 #############################################
 # SOLUS ISO DOWNLOADER IS A WIP             #
 # Created by: James Tigert - kz6fittycent   #
-# Date: 12 JUN 2020                         #
+# 12 JUN 2020                               #
 #############################################
 
 #############################################################################
@@ -80,7 +80,7 @@ clear
            
            case $mirror in
                 1) echo "Downloading ${BUD}..."
-                   wget $FALK_BUDG                    
+                   wget --no-config $FALK_BUDG                    
                    echo ""
                    echo "Creating checksum..."
                    sha256sum $BUD > $BUD.sha256sum 
@@ -92,7 +92,7 @@ clear
                    ;;
                    
                 2) echo "Downloading ${BUD}..."
-                   wget $HEL_BUDG
+                   wget --no-config $HEL_BUDG
                    echo ""
                    echo "Creating checksum..."                   
                    sha256sum $BUD > $BUD.sha256sum 
@@ -104,7 +104,7 @@ clear
                    ;;
                    
                 3) echo "Downloading ${BUD}..."
-                   wget $ROC_BUDG
+                   wget --no-config $ROC_BUDG
                    echo ""
                    echo "Creating checksum..."                   
                    sha256sum $BUD > $BUD.sha256sum 
@@ -135,7 +135,7 @@ clear
            
            case $mirror in
                 1) echo "Downloading ${GNM}..."
-                   wget $FALK_GNM 
+                   wget --no-config $FALK_GNM 
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $GNM > $GNM.sha256sum 
@@ -147,7 +147,7 @@ clear
                    ;;
                    
                 2) echo "Downloading ${GNM}..."
-                   wget $HEL_GNM
+                   wget --no-config $HEL_GNM
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $GNM > $GNM.sha256sum 
@@ -159,7 +159,7 @@ clear
                    ;;
                    
                 3) echo "Downloading ${GNM}..."
-                   wget $ROC_GNM
+                   wget --no-config $ROC_GNM
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $GNM > $GNM.sha256sum 
@@ -191,7 +191,7 @@ clear
                       
            case $mirror in
                 1) echo "Downloading ${PLA}..."
-                   wget $FALK_PLA 
+                   wget --no-config $FALK_PLA 
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $PLA > $PLA.sha256sum 
@@ -203,7 +203,7 @@ clear
                    ;;
                    
                 2) echo "Downloading ${PLA}..."
-                   wget $HEL_PLA
+                   wget --no-config $HEL_PLA
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $PLA > $PLA.sha256sum 
@@ -215,7 +215,7 @@ clear
                    ;;
                    
                 3) echo "Downloading ${PLA}..."
-                   wget $ROC_PLA
+                   wget --no-config $ROC_PLA
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $PLA > $PLA.sha256sum 
@@ -246,7 +246,7 @@ clear
            
            case $mirror in
                 1) echo "Downloading ${MAT}..."
-                   wget $FALK_MAT
+                   wget --no-config $FALK_MAT
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $MAT > $MAT.sha256sum 
@@ -258,7 +258,7 @@ clear
                    ;;
                    
                 2) echo "Downloading ${MAT}..."
-                   wget $HEL_MAT
+                   wget --no-config $HEL_MAT
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $MAT > $MAT.sha256sum
@@ -270,7 +270,7 @@ clear
                    ;;
                    
                 3) echo "Downloading ${MAT}..."
-                   wget $ROC_MAT
+                   wget --no-config $ROC_MAT
                    echo ""
                    echo "Creating checksum..." 
                    sha256sum $MAT > $MAT.sha256sum 
