@@ -66,11 +66,6 @@ Creating checksum...
 Done
 ```
 
-## Verify download
 
-```
-$ sha256sum Solus-4.1-GNOME.iso.sha256sum 
-c113a6b6fce4480e33ce328970ff8c6d018081b9a4bc01f46032ce08d2e29b7c  Solus-4.1-GNOME.iso.sha256sum
-```
 
 
