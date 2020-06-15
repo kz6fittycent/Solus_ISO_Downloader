@@ -53,7 +53,7 @@ echo "               MENU              "
 echo ""
 echo "-------------------------------------"
 echo ""
-echo "Select from the following options: " 
+echo "Choose from the following options: " 
 echo ""
 echo "1) Download Solus Budgie Edition"
 echo "2) Download Solus GNOME Edition"
@@ -62,6 +62,8 @@ echo "4) Download Solus MATE Edition"
 echo "5) Quit"
 echo "" 
 read -p "Choice: " answer 
+echo ""
+echo ""
 clear
 
 
@@ -75,8 +77,11 @@ clear
            echo "2) Helsinki"
            echo "3) Rochester"
            echo "4) Cancel"
+           echo ""
            
-           read -p "Mirror: " mirror 
+           read -p "Mirror: " mirror
+           echo ""
+           echo ""
            
            case $mirror in
                 1) echo "Downloading ${BUD}..."
