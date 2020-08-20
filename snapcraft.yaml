@@ -30,7 +30,10 @@ parts:
     
     override-pull: |
       snapcraftctl pull
-      snapcraftctl set-version "$(git describe --tags | sed 's/^v//')"
+      VERSION=$(curl -s https://github.com/kz6fittycent/Solus_ISO_Downloader/blob/master/solus_iso_downloader.sh | head -n 150 | grep 'version' | awk '{ print $10 }')
+      echo "Setting snap version to '$VERSION'"
+      snapcraftctl set-version "$VERSION"
+      echo "$VERSION" > version
     
     build-packages:
       - wget
