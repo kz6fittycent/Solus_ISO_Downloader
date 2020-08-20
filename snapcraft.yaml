@@ -1,5 +1,5 @@
 name: solus-iso-downloader
-adopt-info: solus-iso-downloader
+version: 1.1
 summary: An ISO downloader for Solus Linux
 description: |
     An ISO downloader for Solus Linux. Download your favorite distribution of Linux without opening a browser. Perfect for VM hosts.
@@ -27,12 +27,6 @@ parts:
     source: https://github.com/kz6fittycent/Solus_ISO_Downloader
     source-type: git
     plugin: nil
-    
-    override-pull: |
-      VERSION=$(curl -s https://github.com/kz6fittycent/Solus_ISO_Downloader/blob/master/solus_iso_downloader.sh | head -n 150 | grep 'version' | awk '{ print $10 }')
-      echo "Setting snap version to '$VERSION'"
-      snapcraftctl set-version "$VERSION"
-      echo "$VERSION" > version
     
     build-packages:
       - wget
