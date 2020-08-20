@@ -40,6 +40,7 @@ ROC_PLA="https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-Plasma.iso"
 
 ##############################################################################
 
+# version 1.1
 
 
 while [ answer != "0" ]  
