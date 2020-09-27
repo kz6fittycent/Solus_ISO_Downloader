@@ -1,5 +1,4 @@
-[![Snap Status](https://build.snapcraft.io/badge/kz6fittycent/Solus_ISO_Downloader.svg)](https://build.snapcraft.io/user/kz6fittycent/Solus_ISO_Downloader)
-
+[![solus-iso-downloader](https://snapcraft.io//solus-iso-downloader/badge.svg)](https://snapcraft.io/solus-iso-downloader)
 
 # Solus_ISO_Downloader
 An ISO downloader for Solus Linux - Terminal based
