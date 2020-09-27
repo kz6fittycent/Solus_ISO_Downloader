@@ -1,5 +1,6 @@
 [![solus-iso-downloader](https://snapcraft.io//solus-iso-downloader/badge.svg)](https://snapcraft.io/solus-iso-downloader)
 
+
 # Solus_ISO_Downloader
 An ISO downloader for Solus Linux - Terminal based
 
