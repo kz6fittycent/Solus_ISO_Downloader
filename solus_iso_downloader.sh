@@ -6,11 +6,6 @@
 # 12 JUN 2020                               #
 #############################################
 
-#############################################################################
-# THIS IS A BASH SCRIPT VERSION MEANT TO REPLACE THE PYTHON VERSION THAT    #
-# WAS BUGGY                                                                 #
-#############################################################################
-
 # ISO NAMES
 #############################################################################
 VER=$(curl https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-Budgie.iso.sha256sum | awk '{print $2}' | cut -d "-" -f2)
@@ -22,29 +17,27 @@ GNM="Solus-${VER}-GNOME.iso"
 
 # MIRROR VARIABLES
 #############################################################################
-FALK="http://solus.veatnet.de/iso/images"
-HEL="http://solus.fin.veatnet.de/iso/images"
-ROC="https://mirrors.rit.edu/solus/images"
+FALK="http://solus.veatnet.de/iso/images/${VER}"
+HEL="http://solus.fin.veatnet.de/iso/images/${VER}"
+ROC="https://mirrors.rit.edu/solus/images/${VER}"
 
-FALK_BUDG="${FALK}/${VER}/Solus-${VER}-Budgie.iso"
-HEL_BUDG="${HEL}/${VER}/Solus-${VER}-Budgie.iso"
-ROC_BUDG="${ROC}/${VER}/Solus-${VER}-Budgie.iso"
+FALK_BUDG="${FALK}/Solus-${VER}-Budgie.iso"
+HEL_BUDG="${HEL}/Solus-${VER}-Budgie.iso"
+ROC_BUDG="${ROC}/Solus-${VER}-Budgie.iso"
 
-FALK_GNM="${FALK}/${VER}/Solus-${VER}-GNOME.iso"
-HEL_GNM="${HEL}/${VER}/Solus-${VER}-GNOME.iso"
-ROC_GNM="${ROC}/${VER}/Solus-${VER}-GNOME.iso"
+FALK_GNM="${FALK}/Solus-${VER}-GNOME.iso"
+HEL_GNM="${HEL}/Solus-${VER}-GNOME.iso"
+ROC_GNM="${ROC}/Solus-${VER}-GNOME.iso"
 
-FALK_MAT="${FALK}/${VER}/Solus-${VER}-MATE.iso"
-HEL_MAT="${HEL}/${VER}/Solus-${VER}-MATE.iso"
-ROC_MAT="${ROC}/${VER}/Solus-${VER}-MATE.iso"
+FALK_MAT="${FALK}/Solus-${VER}-MATE.iso"
+HEL_MAT="${HEL}/Solus-${VER}-MATE.iso"
+ROC_MAT="${ROC}/Solus-${VER}-MATE.iso"
 
-FALK_PLA="${FALK}/${VER}/Solus-${VER}-Plasma.iso"
-HEL_PLA="${HEL}/${VER}/Solus-${VER}-Plasma.iso"
-ROC_PLA="${ROC}/${VER}/Solus-${VER}-Plasma.iso"
+FALK_PLA="${FALK}/Solus-${VER}-Plasma.iso"
+HEL_PLA="${HEL}/Solus-${VER}-Plasma.iso"
+ROC_PLA="${ROC}/Solus-${VER}-Plasma.iso"
 
 ##############################################################################
-
-# version 1.1
 
 
 while [ answer != "0" ]  
