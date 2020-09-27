@@ -22,22 +22,25 @@ GNM="Solus-${VER}-GNOME.iso"
 
 # MIRROR VARIABLES
 #############################################################################
+FALK="http://solus.veatnet.de/iso/images"
+HEL="http://solus.fin.veatnet.de/iso/images"
+ROC="https://mirrors.rit.edu/solus/images"
 
-FALK_BUDG="http://solus.veatnet.de/iso/images/4.1/Solus-4.1-Budgie.iso"
-HEL_BUDG="http://solus.fin.veatnet.de/iso/images/4.1/Solus-4.1-Budgie.iso"
-ROC_BUDG="https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-Budgie.iso"
+FALK_BUDG="${FALK}/${VER}/Solus-${VER}-Budgie.iso"
+HEL_BUDG="${HEL}/${VER}/Solus-${VER}-Budgie.iso"
+ROC_BUDG="${ROC}/${VER}/Solus-${VER}-Budgie.iso"
 
-FALK_GNM="http://solus.veatnet.de/iso/images/4.1/Solus-4.1-GNOME.iso"
-HEL_GNM="http://solus.fin.veatnet.de/iso/images/4.1/Solus-4.1-GNOME.iso"
-ROC_GNM="https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-GNOME.iso"
+FALK_GNM="${FALK}/${VER}/Solus-${VER}-GNOME.iso"
+HEL_GNM="${HEL}/${VER}/Solus-${VER}-GNOME.iso"
+ROC_GNM="${ROC}/${VER}/Solus-${VER}-GNOME.iso"
 
-FALK_MAT="http://solus.veatnet.de/iso/images/4.1/Solus-4.1-MATE.iso"
-HEL_MAT="http://solus.fin.veatnet.de/iso/images/4.1/Solus-4.1-MATE.iso"
-ROC_MAT="https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-MATE.iso"
+FALK_MAT="${FALK}/${VER}/Solus-${VER}-MATE.iso"
+HEL_MAT="${HEL}/${VER}/Solus-${VER}-MATE.iso"
+ROC_MAT="${ROC}/${VER}/Solus-${VER}-MATE.iso"
 
-FALK_PLA="http://solus.veatnet.de/iso/images/4.1/Solus-4.1-Plasma.iso"
-HEL_PLA="http://solus.fin.veatnet.de/iso/images/4.1/Solus-4.1-Plasma.iso"
-ROC_PLA="https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-Plasma.iso"
+FALK_PLA="${FALK}/${VER}/Solus-${VER}-Plasma.iso"
+HEL_PLA="${HEL}/${VER}/Solus-${VER}-Plasma.iso"
+ROC_PLA="${ROC}/${VER}/Solus-${VER}-Plasma.iso"
 
 ##############################################################################
 
