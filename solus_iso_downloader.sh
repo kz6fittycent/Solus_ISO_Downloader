@@ -16,10 +16,12 @@ GNM="Solus-${VER}-GNOME.iso"
 #############################################################################
 
 # MIRROR VARIABLES
+# $VER won't stick in VAR for the links - will have to update manually.
 #############################################################################
-FALK="http://solus.veatnet.de/iso/images/${VER}"
-HEL="http://solus.fin.veatnet.de/iso/images/${VER}"
-ROC="https://mirrors.rit.edu/solus/images/${VER}"
+
+FALK="http://solus.veatnet.de/iso/images/4.1"
+HEL="http://solus.fin.veatnet.de/iso/images/4.1"
+ROC="https://mirrors.rit.edu/solus/images/4.1"
 
 FALK_BUDG="${FALK}/Solus-${VER}-Budgie.iso"
 HEL_BUDG="${HEL}/Solus-${VER}-Budgie.iso"
