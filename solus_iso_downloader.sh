@@ -16,24 +16,23 @@ GNM="Solus-${VER}-GNOME.iso"
 #############################################################################
 
 # MIRROR VARIABLES
-# $VER won't stick in VAR for the links - will have to update manually.
 #############################################################################
 
-FALK_BUDG=http://solus.veatnet.de/iso/images/$VER/Solus-$VER-Budgie.iso
-HEL_BUDG=http://solus.fin.veatnet.de/iso/images/$VERSolus-$VER-Budgie.iso
-ROC_BUDG=https://mirrors.rit.edu/solus/images/$VER/Solus-$VER-Budgie.iso
+FALK_BUDG=http://solus.veatnet.de/iso/images/${VER}/Solus-${VER}-Budgie.iso
+HEL_BUDG=http://solus.fin.veatnet.de/iso/images/${VER}/Solus-${VER}-Budgie.iso
+ROC_BUDG=https://mirrors.rit.edu/solus/images/${VER}/Solus-${VER}-Budgie.iso
 
-FALK_GNM=http://solus.veatnet.de/iso/images/$VER/Solus-$VER-GNOME.iso
-HEL_GNM=http://solus.fin.veatnet.de/iso/images/$VER/Solus-$VER-GNOME.iso
-ROC_GNM=https://mirrors.rit.edu/solus/images/$VER/Solus-$VER-GNOME.iso
+FALK_GNM=http://solus.veatnet.de/iso/images/${VER}/Solus-${VER}-GNOME.iso
+HEL_GNM=http://solus.fin.veatnet.de/iso/images/${VER}/Solus-${VER}-GNOME.iso
+ROC_GNM=https://mirrors.rit.edu/solus/images/${VER}/Solus-${VER}-GNOME.iso
 
-FALK_MAT=http://solus.veatnet.de/iso/images/$VER/Solus-$VER-MATE.iso
-HEL_MAT=http://solus.fin.veatnet.de/iso/images/$VER/Solus-$VER-MATE.iso
-ROC_MAT=https://mirrors.rit.edu/solus/images/$VER/Solus-$VER-MATE.iso
+FALK_MAT=http://solus.veatnet.de/iso/images/${VER}/Solus-${VER}-MATE.iso
+HEL_MAT=http://solus.fin.veatnet.de/iso/images/${VER}/Solus-${VER}-MATE.iso
+ROC_MAT=https://mirrors.rit.edu/solus/images/${VER}/Solus-${VER}-MATE.iso
 
-FALK_PLA=http://solus.veatnet.de/iso/images/$VER/Solus-$VER-Plasma.iso
-HEL_PLA=http://solus.fin.veatnet.de/iso/images/$VER/Solus-$VER-Plasma.iso
-ROC_PLA=https://mirrors.rit.edu/solus/images/$VER/Solus-$VER-Plasma.iso
+FALK_PLA=http://solus.veatnet.de/iso/images/${VER}/Solus-${VER}-Plasma.iso
+HEL_PLA=http://solus.fin.veatnet.de/iso/images/${VER}/Solus-${VER}-Plasma.iso
+ROC_PLA=https://mirrors.rit.edu/solus/images/${VER}/Solus-${VER}-Plasma.iso
 
 ##############################################################################
 
