@@ -19,25 +19,25 @@ GNM="Solus-${VER}-GNOME.iso"
 # $VER won't stick in VAR for the links - will have to update manually.
 #############################################################################
 
-FALK=http://solus.veatnet.de/iso/images/${VER}
-HEL=http://solus.fin.veatnet.de/iso/images/${VER}
-ROC=https://mirrors.rit.edu/solus/images/${VER}
+FALK=http://solus.veatnet.de/iso/images/"$VER"
+HEL=http://solus.fin.veatnet.de/iso/images/"$VER"
+ROC=https://mirrors.rit.edu/solus/images/"$VER"
 
-FALK_BUDG=${FALK}/Solus-'${VER}'-Budgie.iso
-HEL_BUDG=${HEL}/Solus-'${VER}'-Budgie.iso
-ROC_BUDG=${ROC}/Solus-'${VER}'-Budgie.iso
+FALK_BUDG=${FALK}/Solus-"$VER"-Budgie.iso
+HEL_BUDG=${HEL}/Solus-"$VER"-Budgie.iso
+ROC_BUDG=${ROC}/Solus-"$VER"-Budgie.iso
 
-FALK_GNM=${FALK}/Solus-'${VER}'-GNOME.iso
-HEL_GNM=${HEL}/Solus-'${VER}'-GNOME.iso
-ROC_GNM=${ROC}/Solus-'${VER}'-GNOME.iso
+FALK_GNM=${FALK}/Solus-"$VER"-GNOME.iso
+HEL_GNM=${HEL}/Solus-"$VER"-GNOME.iso
+ROC_GNM=${ROC}/Solus-"$VER"-GNOME.iso
 
-FALK_MAT=${FALK}/Solus-'${VER}'-MATE.iso
-HEL_MAT=${HEL}/Solus-'${VER}'-MATE.iso
-ROC_MAT=${ROC}/Solus-'${VER}'-MATE.iso
+FALK_MAT=${FALK}/Solus-"$VER"-MATE.iso
+HEL_MAT=${HEL}/Solus-"$VER"-MATE.iso
+ROC_MAT=${ROC}/Solus-"$VER"-MATE.iso
 
-FALK_PLA=${FALK}/Solus-'${VER}'-Plasma.iso
-HEL_PLA=${HEL}/Solus-'${VER}'-Plasma.iso
-ROC_PLA=${ROC}/Solus-'${VER}'-Plasma.iso
+FALK_PLA=${FALK}/Solus-"$VER"-Plasma.iso
+HEL_PLA=${HEL}/Solus-"$VER"-Plasma.iso
+ROC_PLA=${ROC}/Solus-"$VER"-Plasma.iso
 
 ##############################################################################
 
