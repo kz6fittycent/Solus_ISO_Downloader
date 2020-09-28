@@ -34,9 +34,11 @@ parts:
 
     build-packages:
       - wget
+      - curl
       
     stage-packages:
       - wget
+      - curl
       
   publish:
     plugin: dump
