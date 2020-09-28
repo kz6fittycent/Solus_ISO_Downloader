@@ -8,7 +8,7 @@
 
 # ISO NAMES
 #############################################################################
-VER=$(curl https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-Budgie.iso.sha256sum | awk '{print $2}' | cut -d "-" -f2)
+VER=$(curl -s https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-Budgie.iso.sha256sum | awk '{print $2}' | cut -d "-" -f2)
 MAT="Solus-${VER}-MATE.iso"
 BUD="Solus-${VER}-Budgie.iso"
 PLA="Solus-${VER}-Plasma.iso"
@@ -17,22 +17,25 @@ GNM="Solus-${VER}-GNOME.iso"
 
 # MIRROR VARIABLES
 #############################################################################
+FALK="http://solus.veatnet.de/iso/images"
+HEL="http://solus.fin.veatnet.de/iso/images"
+ROC="https://mirrors.rit.edu/solus/images"
 
-FALK_BUDG="http://solus.veatnet.de/iso/images/${VER}/Solus-${VER}-Budgie.iso"
-HEL_BUDG="http://solus.fin.veatnet.de/iso/images/${VER}/Solus-${VER}-Budgie.iso"
-ROC_BUDG="https://mirrors.rit.edu/solus/images/${VER}/Solus-${VER}-Budgie.iso"
+FALK_BUDG="${FALK}/${VER}/${BUD}"
+HEL_BUDG="${HEL}/${VER}/${BUD}"
+ROC_BUDG="${ROC}/${VER}/${BUD}"
 
-FALK_GNM="http://solus.veatnet.de/iso/images/${VER}/Solus-${VER}-GNOME.iso"
-HEL_GNM="http://solus.fin.veatnet.de/iso/images/${VER}/Solus-${VER}-GNOME.iso"
-ROC_GNM="https://mirrors.rit.edu/solus/images/${VER}/Solus-${VER}-GNOME.iso"
+FALK_GNM="${FALK}/${VER}/${GNM}"
+HEL_GNM="${HEL}/${VER}/${GNM}"
+ROC_GNM="${ROC}/${VER}/${GNM}"
 
-FALK_MAT="http://solus.veatnet.de/iso/images/${VER}/Solus-${VER}-MATE.iso"
-HEL_MAT="http://solus.fin.veatnet.de/iso/images/${VER}/Solus-${VER}-MATE.iso"
-ROC_MAT="https://mirrors.rit.edu/solus/images/${VER}/Solus-${VER}-MATE.iso"
+FALK_MAT="${FALK}/${VER}/${MAT}"
+HEL_MAT="${HEL}/${VER}/${MAT}"
+ROC_MAT="${ROC}/${VER}/${MAT}"
 
-FALK_PLA="http://solus.veatnet.de/iso/images/${VER}/Solus-${VER}-Plasma.iso"
-HEL_PLA="http://solus.fin.veatnet.de/iso/images/${VER}/Solus-${VER}-Plasma.iso"
-ROC_PLA="https://mirrors.rit.edu/solus/images/${VER}/Solus-${VER}-Plasma.iso"
+FALK_PLA="${FALK}/${VER}/${PLA}"
+HEL_PLA="${HEL}/${VER}/${PLA}"
+ROC_PLA="${ROC}/${VER}/${PLA}"
 
 ##############################################################################
 
