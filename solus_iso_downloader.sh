@@ -8,7 +8,8 @@
 
 # ISO NAMES
 #############################################################################
-VER=$(curl -s https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-Budgie.iso.sha256sum | awk '{print $2}' | cut -d "-" -f2)
+# UPDATE VER ONLY - WILL POPULATE THROUGHOUT SCRIPT
+VER=$(curl -s https://mirrors.rit.edu/solus/images/4.1/Solus-4.1-Budgie.iso.sha256sum | awk '{print $2}' | cut -d "-" -f2) 
 MAT="Solus-${VER}-MATE.iso"
 BUD="Solus-${VER}-Budgie.iso"
 PLA="Solus-${VER}-Plasma.iso"
