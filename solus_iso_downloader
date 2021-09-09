@@ -9,7 +9,8 @@
 # ISO NAMES
 #############################################################################
 # UPDATE VER ONLY - WILL POPULATE THROUGHOUT SCRIPT
-VER=$(curl -s https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-Budgie.iso.sha256sum | awk '{print $2}' | cut -d "-" -f2) 
+#This variable is redundant #VER=$(curl -s https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-Budgie.iso.sha256sum | awk '{print $2}' | cut -d "-" -f2) 
+VER="4.3"
 MAT="Solus-${VER}-MATE.iso"
 BUD="Solus-${VER}-Budgie.iso"
 PLA="Solus-${VER}-Plasma.iso"
