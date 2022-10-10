@@ -45,7 +45,4 @@ parts:
     plugin: dump
     source: .
     organize:
-      ./solus_iso_downloader: /bin/solus_iso_downloader
-      
-  prime:
-    - -README*       
+      ./solus_iso_downloader: /bin/solus_iso_downloader    
