@@ -4,11 +4,12 @@
 # SOLUS ISO DOWNLOADER IS A WIP             #
 # Created by: James Tigert - kz6fittycent   #
 # 12 JUN 2020                               #
+# 10 OCT 2022                               #
+# Removed old links - no longer valid       #
 #############################################
 
 # ISO NAMES
 #############################################################################
-# UPDATE VER ONLY - WILL POPULATE THROUGHOUT SCRIPT
 VER=$(curl -s https://getsol.us/download/ | grep "Solus-" | head -n1 | cut -d "-" -f2)
 MAT="Solus-${VER}-MATE.iso"
 BUD="Solus-${VER}-Budgie.iso"
@@ -18,24 +19,24 @@ GNM="Solus-${VER}-GNOME.iso"
 
 # MIRROR VARIABLES
 #############################################################################
-FALK="http://solus.veatnet.de/iso/images"
-HEL="http://solus.fin.veatnet.de/iso/images"
+#FALK="http://solus.veatnet.de/iso/images"
+#HEL="http://solus.fin.veatnet.de/iso/images"
 ROC="https://mirrors.rit.edu/solus/images"
 
-FALK_BUDG="${FALK}/${VER}/${BUD}"
-HEL_BUDG="${HEL}/${VER}/${BUD}"
+#FALK_BUDG="${FALK}/${VER}/${BUD}"
+#HEL_BUDG="${HEL}/${VER}/${BUD}"
 ROC_BUDG="${ROC}/${VER}/${BUD}"
 
-FALK_GNM="${FALK}/${VER}/${GNM}"
-HEL_GNM="${HEL}/${VER}/${GNM}"
+#FALK_GNM="${FALK}/${VER}/${GNM}"
+#HEL_GNM="${HEL}/${VER}/${GNM}"
 ROC_GNM="${ROC}/${VER}/${GNM}"
 
-FALK_MAT="${FALK}/${VER}/${MAT}"
-HEL_MAT="${HEL}/${VER}/${MAT}"
+#FALK_MAT="${FALK}/${VER}/${MAT}"
+#HEL_MAT="${HEL}/${VER}/${MAT}"
 ROC_MAT="${ROC}/${VER}/${MAT}"
 
-FALK_PLA="${FALK}/${VER}/${PLA}"
-HEL_PLA="${HEL}/${VER}/${PLA}"
+#FALK_PLA="${FALK}/${VER}/${PLA}"
+#HEL_PLA="${HEL}/${VER}/${PLA}"
 ROC_PLA="${ROC}/${VER}/${PLA}"
 ##############################################################################
 
@@ -64,49 +65,8 @@ echo ""
 echo ""
 clear
 
-
     case $answer in
-        1) echo "Choose your mirror"
-           echo ""
-           while [ mirror != "0" ]
-           do
-           echo ""
-           echo "1) Falkenstein"
-           echo "2) Helsinki"
-           echo "3) Rochester"
-           echo "4) Cancel"
-           echo ""
-           
-           read -p "Mirror: " mirror
-           echo ""
-           echo ""
-           
-           case $mirror in
-                1) echo "Downloading ${BUD}..."
-                   wget --no-config $FALK_BUDG                    
-                   echo ""
-                   echo "Creating checksum..."
-                   sha256sum $BUD > $BUD.sha256sum 
-                   echo ""
-                   echo "Done"   
-                   sleep 2
-                   clear                
-                   exit
-                   ;;
-                   
-                2) echo "Downloading ${BUD}..."
-                   wget --no-config $HEL_BUDG
-                   echo ""
-                   echo "Creating checksum..."                   
-                   sha256sum $BUD > $BUD.sha256sum 
-                   echo ""                   
-                   echo "Done"
-                   sleep 2
-                   clear                                        
-                   exit                   
-                   ;;
-                   
-                3) echo "Downloading ${BUD}..."
+      1) echo "Downloading ${BUD}..."
                    wget --no-config $ROC_BUDG
                    echo ""
                    echo "Creating checksum..."                   
@@ -117,51 +77,8 @@ clear
                    clear                                    
                    exit                   
                    ;;
-                   
-                4) exit ;;
-                   
-           esac
-           read key
-           done
-           ;;
-        2) echo "Choose your mirror"
-           echo ""
-           while [ mirror != "0" ]
-           do
-           echo ""
-           echo "1) Falkenstein"
-           echo "2) Helsinki"
-           echo "3) Rochester"
-           echo "4) Exit"
-           
-           read -p "Mirror: " mirror            
-           
-           case $mirror in
-                1) echo "Downloading ${GNM}..."
-                   wget --no-config $FALK_GNM 
-                   echo ""
-                   echo "Creating checksum..." 
-                   sha256sum $GNM > $GNM.sha256sum 
-                   echo ""                   
-                   echo "Done" 
-                   sleep 2
-                   clear                                       
-                   exit
-                   ;;
-                   
-                2) echo "Downloading ${GNM}..."
-                   wget --no-config $HEL_GNM
-                   echo ""
-                   echo "Creating checksum..." 
-                   sha256sum $GNM > $GNM.sha256sum 
-                   echo ""                   
-                   echo "Done"     
-                   sleep 2
-                   clear                                   
-                   exit                  
-                   ;;
-                   
-                3) echo "Downloading ${GNM}..."
+        
+       2) echo "Downloading ${GNM}..."
                    wget --no-config $ROC_GNM
                    echo ""
                    echo "Creating checksum..." 
@@ -173,51 +90,7 @@ clear
                    exit                   
                    ;;
                    
-                4) exit ;;
-                   
-           esac
-           read key
-           done
-           ;;    
-               
-        3) echo "Choose your mirror"
-           echo ""
-           while [ mirror != "0" ]
-           do
-           echo ""
-           echo "1) Falkenstein"
-           echo "2) Helsinki"
-           echo "3) Rochester"
-           echo "4) Exit"
-
-           read -p "Mirror: " mirror 
-                      
-           case $mirror in
-                1) echo "Downloading ${PLA}..."
-                   wget --no-config $FALK_PLA 
-                   echo ""
-                   echo "Creating checksum..." 
-                   sha256sum $PLA > $PLA.sha256sum 
-                   echo ""                   
-                   echo "Done"   
-                   sleep 2
-                   clear                                     
-                   exit                   
-                   ;;
-                   
-                2) echo "Downloading ${PLA}..."
-                   wget --no-config $HEL_PLA
-                   echo ""
-                   echo "Creating checksum..." 
-                   sha256sum $PLA > $PLA.sha256sum 
-                   echo ""                   
-                   echo "Done"  
-                   sleep 2
-                   clear                                      
-                   exit                   
-                   ;;
-                   
-                3) echo "Downloading ${PLA}..."
+       3) echo "Downloading ${PLA}..."
                    wget --no-config $ROC_PLA
                    echo ""
                    echo "Creating checksum..." 
@@ -229,50 +102,7 @@ clear
                    exit                   
                    ;;
                    
-                4) exit ;;
-           esac
-           read key
-           done
-           ;;  
-
-        4) echo "Choose your mirror"
-           echo ""
-           while [ mirror != "0" ]
-           do
-           echo ""
-           echo "1) Falkenstein"
-           echo "2) Helsinki"
-           echo "3) Rochester"
-           echo "4) Exit"
-           
-           read -p "Mirror: " mirror            
-           
-           case $mirror in
-                1) echo "Downloading ${MAT}..."
-                   wget --no-config $FALK_MAT
-                   echo ""
-                   echo "Creating checksum..." 
-                   sha256sum $MAT > $MAT.sha256sum 
-                   echo ""                   
-                   echo "Done" 
-                   sleep 2
-                   clear                                       
-                   exit                   
-                   ;;
-                   
-                2) echo "Downloading ${MAT}..."
-                   wget --no-config $HEL_MAT
-                   echo ""
-                   echo "Creating checksum..." 
-                   sha256sum $MAT > $MAT.sha256sum
-                   echo ""                    
-                   echo "Done"    
-                   sleep 2
-                   clear                                    
-                   exit                     
-                   ;;
-                   
-                3) echo "Downloading ${MAT}..."
+       4) echo "Downloading ${MAT}..."
                    wget --no-config $ROC_MAT
                    echo ""
                    echo "Creating checksum..." 
@@ -282,16 +112,10 @@ clear
                    sleep 2
                    clear                                    
                    exit                    
-                   ;;
+                   ;;  
                    
-                4) exit ;;
-           esac
-           read key
-           done
-           ;;                  
-                   
-        5) break ;;     
-              
+        5) exit ;;
+                      
    esac              
    echo "Press RETURN for MENU" 
    read key 
