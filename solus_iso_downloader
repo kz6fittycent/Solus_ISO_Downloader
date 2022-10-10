@@ -9,7 +9,7 @@
 # ISO NAMES
 #############################################################################
 # UPDATE VER ONLY - WILL POPULATE THROUGHOUT SCRIPT
-VER=4.3
+VER=$(curl -s https://getsol.us/download/ | grep "Solus-" | head -n1 | cut -d "-" -f2)
 MAT="Solus-${VER}-MATE.iso"
 BUD="Solus-${VER}-Budgie.iso"
 PLA="Solus-${VER}-Plasma.iso"
