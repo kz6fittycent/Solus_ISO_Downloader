@@ -46,3 +46,6 @@ parts:
     source: .
     organize:
       ./solus_iso_downloader: /bin/solus_iso_downloader
+      
+  prime:
+    - -README*       
