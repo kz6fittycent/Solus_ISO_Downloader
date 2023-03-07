@@ -10,8 +10,8 @@
 
 # ISO NAMES
 #############################################################################
-#VER=$(curl -s https://getsol.us/download/ | grep "Solus-" | head -n1 | cut -d "-" -f2)
-VER=4.3 # temporary measure until Solus gets their site back up
+VER=$(curl -s https://getsol.us/download/ | grep "Solus-" | head -n1 | cut -d "-" -f2)
+#VER=4.3 # temporary measure until Solus gets their site back up
 MAT="Solus-${VER}-MATE.iso"
 BUD="Solus-${VER}-Budgie.iso"
 PLA="Solus-${VER}-Plasma.iso"
