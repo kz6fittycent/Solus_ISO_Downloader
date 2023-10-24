@@ -22,7 +22,7 @@ GNM="Solus-${VER}-GNOME.iso"
 #############################################################################
 #FALK="http://solus.veatnet.de/iso/images"
 #HEL="http://solus.fin.veatnet.de/iso/images"
-ROC="https://mirrors.rit.edu/solus/images"
+ROC="https://downloads.getsol.us/isos/"
 
 #FALK_BUDG="${FALK}/${VER}/${BUD}"
 #HEL_BUDG="${HEL}/${VER}/${BUD}"
