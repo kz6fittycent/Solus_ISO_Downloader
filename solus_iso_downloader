@@ -5,14 +5,16 @@
 # Created by: James Tigert - kz6fittycent   #
 # 12 JUN 2020                               #
 # 10 OCT 2022                               #
-# Removed old links - no longer valid       #
+# Removed old links - no longer valid   
+# 19 AUG 2024 
+# Changed MATE for XFCE-Beta
 #############################################
 
 # ISO NAMES
 #############################################################################
 VER=$(curl -s https://getsol.us/download/ | grep "Solus-" | head -n1 | cut -d "-" -f2)
 #VER=4.3 # temporary measure until Solus gets their site back up
-MAT="Solus-${VER}-MATE.iso"
+MAT="Solus-${VER}-XFCE-Beta.iso"
 BUD="Solus-${VER}-Budgie.iso"
 PLA="Solus-${VER}-Plasma.iso"
 GNM="Solus-${VER}-GNOME.iso"
@@ -58,7 +60,7 @@ echo ""
 echo "1) Download Solus Budgie Edition"
 echo "2) Download Solus GNOME Edition"
 echo "3) Download Solus Plasma Edition"
-echo "4) Download Solus MATE Edition"
+echo "4) Download Solus XFCE-Beta Edition"
 echo "5) Quit"
 echo "" 
 read -p "Choice: " answer 
