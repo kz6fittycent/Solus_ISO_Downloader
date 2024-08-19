@@ -6,13 +6,15 @@ description: |
 
 license: MIT
 
-base: core22
+base: core24
 grade: stable
 confinement: strict
 compression: lzo
 
-architectures:
-  - build-on: amd64
+platforms:
+  amd64:
+    build-on: [amd64]
+    build-for: [amd64]
 
 apps:
   solus-iso-downloader:
@@ -30,8 +32,8 @@ parts:
     plugin: nil
     
     override-pull: |
-      craftctl pull
-      craftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
+      craftctl default
+      craftctl set version="$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
 
     build-packages:
       - wget
